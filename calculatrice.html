@@ -16,32 +16,31 @@
     <div class="calculatorBlock">
 
         <div>
-            <p class="screenText"></p>
+            <p class="screenText">0</p>
         </div>
 
-        <button class="button0" onclick = "buttonClicked(0)">0</button>
-        <button class="button1" onclick = "buttonClicked(1)">1</button>
-        <button class="button2" onclick = "buttonClicked(2)">2</button>
-        <button class="button3" onclick = "buttonClicked(3)">3</button>
-        <button class="button4" onclick = "buttonClicked(4)">4</button>
-        <button class="button5" onclick = "buttonClicked(5)">5</button>
-        <button class="button6" onclick = "buttonClicked(6)">6</button>
-        <button class="button7" onclick = "buttonClicked(7)">7</button>
-        <button class="button8" onclick = "buttonClicked(8)">8</button>
-        <button class="button9" onclick = "buttonClicked(9)">9</button>
-        <button class="buttonDot" onclick = "buttonClicked('.')">.</button>
-        <button class="buttonAdd" onclick = "buttonClicked('+')">+</button>
-        <button class="buttonSubstract" onclick = "buttonClicked('-')">-</button>
-        <button class="buttonMultiply" onclick = "buttonClicked('*')">*</button>
-        <button class="buttonDivide" onclick = "buttonClicked('/')">/</button>
-        <button class="buttonLeftBracket" onclick = "buttonClicked('(')">(</button>
-        <button class="buttonRightBracket" onclick = "buttonClicked(')')">)</button>
+        <button class="button0" onclick="buttonClicked(0)">0</button>
+        <button class="button1" onclick="buttonClicked(1)">1</button>
+        <button class="button2" onclick="buttonClicked(2)">2</button>
+        <button class="button3" onclick="buttonClicked(3)">3</button>
+        <button class="button4" onclick="buttonClicked(4)">4</button>
+        <button class="button5" onclick="buttonClicked(5)">5</button>
+        <button class="button6" onclick="buttonClicked(6)">6</button>
+        <button class="button7" onclick="buttonClicked(7)">7</button>
+        <button class="button8" onclick="buttonClicked(8)">8</button>
+        <button class="button9" onclick="buttonClicked(9)">9</button>
+        
+        <button class="buttonDot" onclick="buttonClicked('.')">.</button>
+        <button class="buttonAdd" onclick="buttonClicked('+')">+</button>
+        <button class="buttonSubstract" onclick="buttonClicked('-')">-</button>
+        <button class="buttonMultiply" onclick="buttonClicked('*')">*</button>
+        <button class="buttonDivide" onclick="buttonClicked('/')">/</button>
+        <button class="buttonLeftBracket" onclick="buttonClicked('(')">(</button>
+        <button class="buttonRightBracket" onclick="buttonClicked(')')">)</button>
 
         <button class="buttonClear" onclick="clearScreen()">C</button>
-        
-        <button class="buttonEqual" onclick="equalOp()">=</button>
 
-
+        <button class="buttonEqual" onclick="opValue!='' ? equalOp():null;">=</button>
 
     </div>
 
