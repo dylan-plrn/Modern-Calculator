@@ -1,0 +1,69 @@
+body {
+    background: url("background.jpg") no-repeat center fixed;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.calculatorBlock {
+    display: grid;
+    grid-template-columns: repeat(4, 77px);
+    grid-template-rows: 91px repeat(5, 77px);
+    width: 308px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0, 0.25);
+}
+
+.calculatorBlock, button {
+    font-family: Lato;
+    font-size: 22px;
+    color: rgb(255, 255, 255, 0.9);
+}
+
+.calculatorBlock button {
+    background-color: #4C5D6F;
+    border: 1px solid rgb(69, 85, 100, 0.70);
+    padding: 0;
+    cursor: pointer;
+    transition: 0.05s;
+
+}
+
+.calculatorBlock .screenBlock {
+    grid-column: 1/5;
+    grid-row: 1/2;
+    text-align: right;
+    background-color: rgb(11, 26, 40, 0.75);
+    border-radius: 10px 10px 0 0;
+}
+
+.calculatorBlock .screenText {
+    margin: 0 30px 0 30px;
+    line-height: 91px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.calculatorBlock .equalButton {
+    grid-column: 4/5;
+    grid-row: 5/7;
+    border-bottom-right-radius: 10px;
+    background-color: #657A90;
+    border: none;
+}
+
+.button0{
+    border-bottom-left-radius: 10px;
+}
+.calculatorBlock .clearButton{
+    background-color: #B58E2A;
+    border: none;
+}
+
+button:hover{
+    filter: brightness(0.95);
+}
+
+button:active{
+    filter: brightness(0.90);
+}

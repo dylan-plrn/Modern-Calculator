@@ -13,34 +13,37 @@
 
 
 
-    <div class="calculatorBlock">
+    <div class="calculatorBlock">  <!-- taille largeur = 77 * 4 = 308 | Hauteur = 77 * 5 + 92 = 477 -->
 
-        <div>
+        <div class="screenBlock">
             <p class="screenText">0</p>
         </div>
 
-        <button class="button0" onclick="buttonClicked(0)">0</button>
-        <button class="button1" onclick="buttonClicked(1)">1</button>
-        <button class="button2" onclick="buttonClicked(2)">2</button>
-        <button class="button3" onclick="buttonClicked(3)">3</button>
-        <button class="button4" onclick="buttonClicked(4)">4</button>
-        <button class="button5" onclick="buttonClicked(5)">5</button>
-        <button class="button6" onclick="buttonClicked(6)">6</button>
-        <button class="button7" onclick="buttonClicked(7)">7</button>
-        <button class="button8" onclick="buttonClicked(8)">8</button>
-        <button class="button9" onclick="buttonClicked(9)">9</button>
-        
-        <button class="buttonDot" onclick="buttonClicked('.')">.</button>
-        <button class="buttonAdd" onclick="buttonClicked('+')">+</button>
-        <button class="buttonSubstract" onclick="buttonClicked('-')">-</button>
-        <button class="buttonMultiply" onclick="buttonClicked('*')">*</button>
-        <button class="buttonDivide" onclick="buttonClicked('/')">/</button>
-        <button class="buttonLeftBracket" onclick="buttonClicked('(')">(</button>
-        <button class="buttonRightBracket" onclick="buttonClicked(')')">)</button>
+            <button onclick="buttonClicked('+')">+</button>
+            <button onclick="buttonClicked('-')">-</button>
+            <button onclick="buttonClicked('*')">x</button>
+            <button onclick="buttonClicked('/')">/</button>
 
-        <button class="buttonClear" onclick="clearScreen()">C</button>
+            <button onclick="buttonClicked(7)">7</button>
+            <button onclick="buttonClicked(8)">8</button>
+            <button onclick="buttonClicked(9)">9</button>
+            <button onclick="buttonClicked('(')">(</button>
 
-        <button class="buttonEqual" onclick="opValue!='' ? equalOp():null;">=</button>
+            <button onclick="buttonClicked(4)">4</button>
+            <button onclick="buttonClicked(5)">5</button>
+            <button onclick="buttonClicked(6)">6</button>
+            <button onclick="buttonClicked(')')">)</button>
+
+            <button onclick="buttonClicked(1)">1</button>
+            <button onclick="buttonClicked(2)">2</button>
+            <button onclick="buttonClicked(3)">3</button>
+
+            <button class="button0" onclick="buttonClicked(0)">0</button>
+            <button onclick="buttonClicked('.')">.</button>
+
+            <button class="clearButton" onclick="clearScreen()">C</button>
+            <button class="equalButton" onclick="opValue !='' ? equalOp():null;">=</button>
+       
 
     </div>
 
@@ -51,12 +54,3 @@
 </html>
 
 
-<!---------- Comment concevoir une calculatrice ---------------
-
-- Envoyer les commandes des touches sous forme de string dans un tableau
-- Afficher en direct la liste des valeurs du tableau sous la forme string
-- Quand on clique le EGAL on vient mettre à la suite toutes les valeurs du taleau avec une boucle for dans une variable
-- Covertir cette variable en nombre avec la fonctoin Number
-- Afficher le résultat
-
----------------------------------------------------------------->
