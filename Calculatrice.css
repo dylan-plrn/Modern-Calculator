@@ -5,12 +5,15 @@ body {
 }
 
 .calculatorBlock {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%);
+
     display: grid;
     grid-template-columns: repeat(4, 77px);
     grid-template-rows: 91px repeat(5, 77px);
     width: 308px;
-    margin: auto;
-    margin-top: 100px;
     box-shadow: 0 0 20px 0 rgb(0, 0, 0, 0.25);
 }
 
@@ -67,3 +70,5 @@ button:hover{
 button:active{
     filter: brightness(0.90);
 }
+
+
