@@ -24,10 +24,7 @@ function clearScreen() {
 let calculatorBlock = document.querySelector(".calculatorBlock");
 let mouseDragging = false;
 
-let checkPointMouseX;
-let checkPointMouseY;
-let checkPointBlockX;
-let checkPointBlockY;
+let checkPointMouseX, checkPointMouseY, checkPointBlockX, checkPointBlockY ;
 
 calculatorBlock.style.left= "50%";
 calculatorBlock.style.top= "80px";
